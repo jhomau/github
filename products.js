@@ -7,7 +7,7 @@ class Products{
 }
 class ProductsManagement{
     constructor(){
-         this.listproducts = []
+         this.listproducts=[];
     }
     addProducts(product){
         this.listproducts.push(product);
@@ -30,4 +30,8 @@ class ProductsManagement{
         }
         return;
     }
+    showProdutcs(){
+        return this.listproducts;
+    }
 }
+module.exports = {ProductsManagement,Products};
